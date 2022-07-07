@@ -15,8 +15,8 @@ sudo systemctl set-default graphical.target
 #sudo sh ./cuda_11.7.0_515.43.04_linux.run
 and then add cuda to path
 
-#sudo cat <<EOF >> /etc/profile
-#export PATH=/usr/local/cuda-11.7/bin${PATH:+:${PATH}}
-#export LD_LIBRARY_PATH=/usr/local/cuda-11.7/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-#EOF
+"""sudo cat <<EOF >> /etc/profile
+export PATH=/usr/local/cuda-11.7/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.7/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+EOF"""
 
