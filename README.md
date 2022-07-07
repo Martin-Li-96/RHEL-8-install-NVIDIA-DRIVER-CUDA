@@ -1,7 +1,7 @@
 RHEL-8-install-NVIDIA-DRIVER-CUDA
 INSTALL NVIDIA-DRIVER
 sudo wget -P /opt https://us.download.nvidia.com/XFree86/Linux-x86_64/515.57/NVIDIA-Linux-x86_64-515.57.run
-sudo systemctl set-default multi-user.taget
+sudo systemctl set-default multi-user.target
 reboot
 s#udo sh ./NVIDIA-Linux-x86_64-515.57.run
 
