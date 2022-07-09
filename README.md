@@ -8,6 +8,11 @@ s#udo sh ./NVIDIA-Linux-x86_64-515.57.run
 At first time to run nvidia installer, it will write file to disable the nouveau module, and then run "dracut --force" command 
 and tehn reboot
 
+
+
+subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+yum update -y
 sudo yum install kernel-debug-devel dkms -y # to use dkms
 Run NVIDIA-Linux-x86_64-515.57.run again, it will finished the installation 
 sudo systemctl set-default graphical.target
